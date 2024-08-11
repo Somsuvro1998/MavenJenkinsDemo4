@@ -21,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            emailext body: 'Please find the pipeline url http://localhost:8080/job/MavenPipeline/ ', subject: 'Pipeline Status', to: 'palz.somsuvro@gmail.com'
+            emailext body: 'Please find the pipeline url http://localhost:8080/job/MavenPipeline/ ', subject: 'Pipeline Status- $PIPELINE- $STATUS', to: 'palz.somsuvro@gmail.com'
         }
     }
 }
